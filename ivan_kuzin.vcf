@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+N;CHARSET=Windows-1251:Кузин;Иван;Анатольевич
+FN;CHARSET=Windows-1251:Кузин Иван Анатольевич
+ORG;CHARSET=Windows-1251:Каллисто Сервисез
+TITLE;CHARSET=Windows-1251:Руководитель проектов маркировки
+EMAIL;type=INTERNET;type=WORK;type=pref:ivan.kuzin@callistovision.ru
+URL:https://callistovision.ru
+TEL;type=CELL;type=VOICE:+79262408221
+TEL;type=WORK;type=VOICE:+74991307471
+ADR;CHARSET=Windows-1251;type=WORK;type=pref:115162, Россия, Москва, ул. Шаболовка, д. 31Г, подъезд 3
+NOTE;CHARSET=Windows-1251:Отказоустойчивые Маркировочные Решения Для Высокопроизводительных Производств. Честный знак.
+END:VCARD

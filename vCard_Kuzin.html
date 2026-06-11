@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Визитка - Иван Кузин</title>
+<style>
+		body {
+			font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+			background: #BD3D2F;
+			margin: 0;
+			min-height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 20px;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+			max-width: 440px;
+		}
+
+		.top-logo {
+			text-align: center;
+			margin-bottom: 20px;
+			width: 100%;
+		}
+
+		.top-logo-img {
+			max-width: 300px;
+			height: auto;
+			display: inline-block;
+		}
+
+		.card {
+			background: white;
+			border-radius: 32px;
+			padding: 32px 24px;
+			width: 100%;
+			text-align: center;
+			box-shadow: 0 25px 45px -12px rgba(0,0,0,0.3);
+			transition: transform 0.2s;
+			box-sizing: border-box;
+		}
+
+		.avatar {
+			width: 100px;
+			height: 100px;
+			background: #e0e0e0;
+			border-radius: 50%;
+			margin: 0 auto 20px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 48px;
+			background: #f0f0f0;
+		}
+
+		h1 {
+			margin: 0;
+			font-size: 28px;
+			color: #333;
+		}
+
+		.title {
+			color: #666;
+			margin: 8px 0 16px;
+			font-size: 16px;
+		}
+
+		.contact-item {
+			display: flex;
+			align-items: center;
+			padding: 12px 0;
+			border-bottom: 1px solid #eee;
+			text-decoration: none;
+			color: #333;
+		}
+
+		.contact-icon {
+			width: 40px;
+			font-size: 24px;
+			text-align: left;
+		}
+
+		.contact-detail {
+			flex: 1;
+			text-align: left;
+			font-size: 16px;
+		}
+
+		.save-button {
+			background: #1F4E7C;
+			color: white;
+			border: none;
+			padding: 14px 20px;
+			border-radius: 40px;
+			font-size: 16px;
+			font-weight: 600;
+			width: 100%;
+			margin-top: 24px;
+			cursor: pointer;
+			transition: background 0.2s;
+		}
+
+		.save-button:active {
+			background: #005a9e;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			body {
+				background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+			}
+			.card {
+				background: #1e1e2e;
+			}
+			h1, .contact-item { color: #fff; }
+			.title { color: #aaa; }
+			.contact-item { border-bottom-color: #333; }
+			.top-logo-img {
+				filter: brightness(0.9);
+			}
+		}
+		.avatar {
+			width: 100px;
+			height: 100px;
+			margin: 0 auto 20px;
+			border-radius: 50%;
+			overflow: hidden;
+			background: #f0f0f0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.avatar-img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+		}
+	</style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-logo">
+            <img src="logo_services.png" alt="Каллисто Сервисез" class="top-logo-img">
+        </div>
+    <div class="card">
+        <div class="avatar">
+			<img src="ava_kuzin.png" alt="Иван" class="avatar-img">
+		</div>
+        <h1>Иван Кузин</h1>
+        <div class="title">Руководитель проектов маркировки</div>
+
+        <a href="tel:+7 (926) 240-82-21" class="contact-item" style="text-decoration: none;">
+            <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M21.1042 11.2083C20.8857 11.2083 20.7083 11.031 20.7083 10.8125C20.7083 6.66575 17.3342 3.29167 13.1875 3.29167C12.969 3.29167 12.7917 3.11433 12.7917 2.89583C12.7917 2.67733 12.969 2.5 13.1875 2.5C17.7712 2.5 21.5 6.22875 21.5 10.8125C21.5 11.031 21.3227 11.2083 21.1042 11.2083ZM18.3333 10.8125C18.3333 7.97517 16.0248 5.66667 13.1875 5.66667C12.969 5.66667 12.7917 5.844 12.7917 6.0625C12.7917 6.281 12.969 6.45833 13.1875 6.45833C15.5886 6.45833 17.5417 8.41138 17.5417 10.8125C17.5417 11.031 17.719 11.2083 17.9375 11.2083C18.156 11.2083 18.3333 11.031 18.3333 10.8125ZM20.1019 20.1312L20.8762 19.2406C21.2783 18.8384 21.5 18.3032 21.5 17.7348C21.5 17.1664 21.2783 16.6305 20.8374 16.195L18.901 14.7122C18.0713 13.8826 16.7215 13.8818 15.8902 14.7099L14.6774 15.8926C11.7641 14.7059 9.39067 12.3301 8.11133 9.31942L9.28933 8.11213C10.1198 7.28167 10.1198 5.93029 9.32338 5.13862L7.7725 3.12542C6.96737 2.32029 5.54554 2.33929 4.78 3.10721L3.85058 3.91787C2.97896 4.78475 2.5 5.96196 2.5 7.231C2.5 13.3656 10.6344 21.5 16.769 21.5C18.038 21.5 19.2145 21.021 20.1019 20.1312ZM7.17796 3.64475L8.72883 5.65796C9.25054 6.17967 9.25054 7.02912 8.72567 7.55479L7.36242 8.95287C7.25317 9.06529 7.21992 9.23154 7.2785 9.37721C8.64729 12.7853 11.3263 15.4635 14.6299 16.7239C14.774 16.7793 14.9371 16.7452 15.0471 16.6384L16.4452 15.2751L16.4484 15.2712C16.9542 14.7645 17.7974 14.732 18.38 15.3052L20.3165 16.788C20.8382 17.3097 20.8382 18.1584 20.2983 18.7007L19.5232 19.5913C18.8044 20.3117 17.8259 20.7083 16.769 20.7083C11.1007 20.7083 3.29167 12.8993 3.29167 7.231C3.29167 6.17412 3.68829 5.19562 4.38971 4.495L5.31992 3.68354C5.58592 3.41754 5.93662 3.28771 6.28179 3.28771C6.6135 3.28771 6.93967 3.40804 7.17875 3.64554L7.17796 3.64475Z" fill="#BD3D2F" stroke="#BD3D2F" stroke-width="0.12"/>
+                </svg>
+            </div>
+            <div class="contact-detail">+7 (926) 240-82-21</div>
+        </a>
+
+        <a href="mailto:ivan.kuzin@callistovision.ru" class="contact-item" style="text-decoration: none;">
+            <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M18.5625 3.5H5.4375C3.26663 3.5 1.5 5.21615 1.5 7.325V16.675C1.5 18.7839 3.26663 20.5 5.4375 20.5H18.5625C20.7334 20.5 22.5 18.7839 22.5 16.675V7.325C22.5 5.21615 20.7334 3.5 18.5625 3.5ZM5.4375 4.35H18.5625C19.511 4.35 20.3501 4.7801 20.9128 5.44055L14.1831 11.9788C13.6039 12.5406 12.8208 12.85 11.9983 12.85C11.1985 12.8356 10.4005 12.544 9.81775 11.9788L3.08725 5.44055C3.64988 4.7801 4.48812 4.35 5.4375 4.35ZM21.625 16.675C21.625 18.3155 20.2512 19.65 18.5625 19.65H5.4375C3.74875 19.65 2.375 18.3155 2.375 16.675V7.325C2.375 6.91955 2.45988 6.53365 2.61213 6.1809L9.19912 12.5797C9.94375 13.3031 10.9316 13.7 11.979 13.7C13.0264 13.7 14.0571 13.3031 14.8017 12.5797L21.3887 6.1809C21.541 6.53365 21.6259 6.91955 21.6259 7.325L21.625 16.675Z" fill="#BD3D2F"/>
+                </svg>
+            </div>
+            <div class="contact-detail">ivan.kuzin@callistovision.ru</div>
+        </a>
+
+        <div class="contact-item">
+            <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_1282_129)">
+                <path d="M1 23H9.8C9.91046 23 10 23.0895 10 23.2V23.8C10 23.9105 9.91046 24 9.8 24H0V2.5C0 1.121 1.121 0 2.5 0H13.5C14.879 0 16 1.121 16 2.5V9.87775C16 9.97719 15.9268 10.0609 15.8292 10.0797C15.6447 10.1152 15.4658 10.1646 15.2932 10.2279C15.1548 10.2787 15 10.1809 15 10.0335V2.5C15 1.673 14.327 1 13.5 1H2.5C1.673 1 1 1.673 1 2.5V23ZM7 13.2C7 13.0895 6.91046 13 6.8 13H4.2C4.08954 13 4 13.0895 4 13.2V13.8C4 13.9105 4.08954 14 4.2 14H6.8C6.91046 14 7 13.9105 7 13.8V13.2ZM4 17.8C4 17.9105 4.08954 18 4.2 18H6.8C6.91046 18 7 17.9105 7 17.8V17.2C7 17.0895 6.91046 17 6.8 17H4.2C4.08954 17 4 17.0895 4 17.2V17.8ZM7 5.2C7 5.08954 6.91046 5 6.8 5H4.2C4.08954 5 4 5.08954 4 5.2V5.8C4 5.91046 4.08954 6 4.2 6H6.8C6.91046 6 7 5.91046 7 5.8V5.2ZM12 5.2C12 5.08954 11.9105 5 11.8 5H9.2C9.08954 5 9 5.08954 9 5.2V5.8C9 5.91046 9.08954 6 9.2 6H11.8C11.9105 6 12 5.91046 12 5.8V5.2ZM7 9.2C7 9.08954 6.91046 9 6.8 9H4.2C4.08954 9 4 9.08954 4 9.2V9.8C4 9.91046 4.08954 10 4.2 10H6.8C6.91046 10 7 9.91046 7 9.8V9.2ZM9 9.8C9 9.91046 9.08954 10 9.2 10H11.8C11.9105 10 12 9.91046 12 9.8V9.2C12 9.08954 11.9105 9 11.8 9H9.2C9.08954 9 9 9.08954 9 9.2V9.8ZM24 16V23.8C24 23.9105 23.9105 24 23.8 24H12.2C12.0895 24 12 23.9105 12 23.8V16C12 14.897 12.897 14 14 14H15V13.5C15 12.673 15.673 12 16.5 12H19.5C20.327 12 21 12.673 21 13.5V14H22C23.103 14 24 14.897 24 16ZM16 14H20V13.5C20 13.225 19.775 13 19.5 13H16.5C16.225 13 16 13.225 16 13.5V14ZM13 16V18H23V16C23 15.448 22.552 15 22 15H14C13.448 15 13 15.448 13 16ZM22.8 23C22.9105 23 23 22.9105 23 22.8V19H18.5V20.8C18.5 20.9105 18.4105 21 18.3 21H17.7C17.5895 21 17.5 20.9105 17.5 20.8V19H13V22.8C13 22.9105 13.0895 23 13.2 23H22.8ZM9 13.8C9 13.9105 9.08954 14 9.2 14H10.4413C10.5123 14 10.5777 13.9621 10.6153 13.9018C10.7312 13.7156 10.8611 13.5402 11.0045 13.3766C11.1263 13.2376 11.0332 13 10.8483 13H9.2C9.08954 13 9 13.0895 9 13.2V13.8Z" fill="#BD3D2F"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1282_129">
+                      <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+            </div>
+            <div class="contact-detail">Каллисто Сервисез</div>
+        </div>
+
+        <a href="https://max.ru/u/f9LHodD0cOIDxQmjjiDn1pWstNnRu2ATZZiVGVDyfuF_naqVvoLnQpQmoH8" class="contact-item" style="text-decoration: none;">
+            <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M17.2567 1.5H6.7433C3.84751 1.5 1.5 3.84751 1.5 6.7433V17.2567C1.5 20.1525 3.84751 22.5 6.7433 22.5H17.2567C20.1525 22.5 22.5 20.1525 22.5 17.2567V6.7433C22.5 3.84751 20.1525 1.5 17.2567 1.5Z" fill="url(#paint0_linear_1282_87)"/>
+              <path d="M17.2567 1.5H6.7433C3.84751 1.5 1.5 3.84751 1.5 6.7433V17.2567C1.5 20.1525 3.84751 22.5 6.7433 22.5H17.2567C20.1525 22.5 22.5 20.1525 22.5 17.2567V6.7433C22.5 3.84751 20.1525 1.5 17.2567 1.5Z" fill="url(#paint1_radial_1282_87)"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1724 19.9449C10.5973 19.9449 9.86529 19.7149 8.59292 18.7951C7.78809 19.8299 5.23951 20.6386 5.12836 19.255C5.12836 18.2165 4.89841 17.3388 4.6378 16.3807C4.32738 15.2003 3.97479 13.8858 3.97479 11.981C3.97479 7.43189 7.70762 4.0095 12.1303 4.0095C16.5568 4.0095 20.0252 7.60052 20.0252 12.0232C20.04 16.3774 16.5267 19.9217 12.1724 19.9449ZM12.2376 7.9416C10.0837 7.83047 8.40511 9.3213 8.03337 11.6591C7.72677 13.5945 8.27099 15.9515 8.73471 16.0741C8.95699 16.1278 9.51654 15.6755 9.86529 15.3268C10.442 15.7252 11.1135 15.9644 11.8122 16.0205C14.0439 16.1278 15.9509 14.4288 16.1007 12.1995C16.1879 9.96548 14.4696 8.07329 12.2376 7.94545V7.9416Z" fill="white"/>
+              <defs>
+                <linearGradient id="paint0_linear_1282_87" x1="3.97479" y1="17.4713" x2="22.5" y2="12" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#44CCFF"/>
+                  <stop offset="0.662" stop-color="#5533EE"/>
+                  <stop offset="1" stop-color="#9933DD"/>
+                </linearGradient>
+                <radialGradient id="paint1_radial_1282_87" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1.00039 -7.72289) rotate(51.356) scale(25.4839 10.5)">
+                  <stop stop-color="#0000FF"/>
+                  <stop offset="1" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+            </svg>
+            </div>
+            <div class="contact-detail">Иван Кузин (Max)</div>
+        </a>
+
+        <a href="ivan_kuzin.vcf" download style="text-decoration: none;">
+            <button class="save-button">Сохранить в контакты</button>
+        </a>
+    </div>
+</body>
+</html>
