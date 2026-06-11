@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Визитка - Имя Фамилия</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #FF2F2F;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 32px;
+            padding: 32px 24px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 25px 45px -12px rgba(0,0,0,0.3);
+            transition: transform 0.2s;
+        }
+        .avatar {
+            width: 100px;
+            height: 100px;
+            background: #e0e0e0;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            background: #f0f0f0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #333;
+        }
+        .title {
+            color: #666;
+            margin: 8px 0 16px;
+            font-size: 16px;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            text-decoration: none;
+            color: #333;
+        }
+        .contact-icon {
+            width: 40px;
+            font-size: 24px;
+            text-align: left;
+        }
+        .contact-detail {
+            flex: 1;
+            text-align: left;
+            font-size: 16px;
+        }
+        .save-button {
+            background: #0078d4;
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            border-radius: 40px;
+            font-size: 16px;
+            font-weight: 600;
+            width: 100%;
+            margin-top: 24px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .save-button:active {
+            background: #005a9e;
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            }
+            .card {
+                background: #1e1e2e;
+            }
+            h1, .contact-item { color: #fff; }
+            .title { color: #aaa; }
+            .contact-item { border-bottom-color: #333; }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="avatar">👤</div>
+        <h1>Денис Белый</h1>
+        <div class="title">Руководитель отдела по работе с партнерами</div>
+
+        <a href="tel:+7 (926) 821-34-26" class="contact-item" style="text-decoration: none;">
+            <div class="contact-icon">📞</div>
+            <div class="contact-detail">+7 (499) 130-74-71</div>
+        </a>
+
+        <a href="mailto:ivan@example.com" class="contact-item" style="text-decoration: none;">
+            <div class="contact-icon">✉️</div>
+            <div class="contact-detail">denis.belyy@callistovision.ru</div>
+        </a>
+
+        <div class="contact-item">
+            <div class="contact-icon">🏢</div>
+            <div class="contact-detail">Каллисто Вижн</div>
+        </div>
+
+        <a href="https://t.me/ivan_petrov" class="contact-item" style="text-decoration: none;">
+            <div class="contact-icon">📱</div>
+            <div class="contact-detail">@ivan_petrov (Telegram)</div>
+        </a>
+
+        <!-- Кнопка для скачивания vCard файла -->
+        <a href="denis_belyy.vcf" download style="text-decoration: none;">
+            <button class="save-button">💾 Сохранить в контакты</button>
+        </a>
+    </div>
+</body>
+</html>
